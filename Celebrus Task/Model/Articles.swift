@@ -1,0 +1,10 @@
+//
+//  Articles.swift
+//  Celebrus Task
+//
+//  Created by John Akpenyi on 10/01/2023.
+//
+
+import Foundation
+
+

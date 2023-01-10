@@ -14,7 +14,8 @@
 		520739C4296DA66800597C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520739C3296DA66800597C89 /* Assets.xcassets */; };
 		520739C7296DA66800597C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520739C5296DA66800597C89 /* LaunchScreen.storyboard */; };
 		520739D2296DA6D200597C89 /* Dao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520739D1296DA6D200597C89 /* Dao.swift */; };
-		520739D4296DA9B800597C89 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520739D3296DA9B800597C89 /* News.swift */; };
+		520739D4296DA9B800597C89 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520739D3296DA9B800597C89 /* Article.swift */; };
+		520739D8296DCCC300597C89 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520739D7296DCCC300597C89 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +28,8 @@
 		520739C6296DA66800597C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520739C8296DA66800597C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		520739D1296DA6D200597C89 /* Dao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dao.swift; sourceTree = "<group>"; };
-		520739D3296DA9B800597C89 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		520739D3296DA9B800597C89 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		520739D7296DCCC300597C89 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				520739D1296DA6D200597C89 /* Dao.swift */,
-				520739D3296DA9B800597C89 /* News.swift */,
+				520739D3296DA9B800597C89 /* Article.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,6 +95,7 @@
 				520739BA296DA66700597C89 /* AppDelegate.swift */,
 				520739BC296DA66700597C89 /* SceneDelegate.swift */,
 				520739BE296DA66700597C89 /* ViewController.swift */,
+				520739D7296DCCC300597C89 /* Alert.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,10 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520739D8296DCCC300597C89 /* Alert.swift in Sources */,
 				520739D2296DA6D200597C89 /* Dao.swift in Sources */,
 				520739BF296DA66700597C89 /* ViewController.swift in Sources */,
 				520739BB296DA66700597C89 /* AppDelegate.swift in Sources */,
-				520739D4296DA9B800597C89 /* News.swift in Sources */,
+				520739D4296DA9B800597C89 /* Article.swift in Sources */,
 				520739BD296DA66700597C89 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
