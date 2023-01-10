@@ -94,9 +94,9 @@
 		520739D0296DA6C200597C89 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				520739D9296DD38900597C89 /* ResultsViewCell.swift */,
 				520739BA296DA66700597C89 /* AppDelegate.swift */,
 				520739BC296DA66700597C89 /* SceneDelegate.swift */,
+				520739D9296DD38900597C89 /* ResultsViewCell.swift */,
 				520739BE296DA66700597C89 /* ViewController.swift */,
 				520739D7296DCCC300597C89 /* Alert.swift */,
 			);

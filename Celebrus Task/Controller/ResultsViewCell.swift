@@ -12,20 +12,13 @@ import SafariServices
 class ResultsViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    let synth = AVSpeechSynthesizer()
+    
     var url = ""
     var currentView = UIViewController()
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    //Speech instation has to be outisde of function or it wont work
+    let synth = AVSpeechSynthesizer()
+    
 
     @IBAction func internetBtnPressed(_ sender: Any) {
         let vc = SFSafariViewController(url: URL(string: url)!)
@@ -35,8 +28,7 @@ class ResultsViewCell: UITableViewCell {
     @IBAction func speakerBtnPressed(_ sender: Any) {
         let utterance = AVSpeechUtterance(string: titleLabel.text!)
         
-        utterance.rate = 0.57
-        utterance.pitchMultiplier = 0.8
+        utterance.rate = 0.5
         utterance.postUtteranceDelay = 0.2
         utterance.volume = 0.8
         
