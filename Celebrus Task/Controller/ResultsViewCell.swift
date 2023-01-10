@@ -7,12 +7,14 @@
 
 import UIKit
 import AVFoundation
+import SafariServices
 
 class ResultsViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     let synth = AVSpeechSynthesizer()
     var url = ""
+    var currentView = UIViewController()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,6 +28,8 @@ class ResultsViewCell: UITableViewCell {
     }
 
     @IBAction func internetBtnPressed(_ sender: Any) {
+        let vc = SFSafariViewController(url: URL(string: url)!)
+        currentView.present(vc, animated: true)
     }
     
     @IBAction func speakerBtnPressed(_ sender: Any) {

@@ -24,8 +24,8 @@ class Dao{
                     do{
                         let result = try JSONDecoder().decode(Articles.self, from: data)
                         completionHandler(result.articles)
-                    }catch{
-                        
+                    }catch let error{
+                        print(error.localizedDescription)
                     }
                     
                     

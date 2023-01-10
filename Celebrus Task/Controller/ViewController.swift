@@ -28,7 +28,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBAction func searchBtnPressed(_ sender: Any) {
         
-        if !searchField.state.isEmpty{
+        if !searchField.hasText{
             Alert.showMessage(title: "Invalid Input", msg: "Please type something then try again", view: self)
         }else{
             Alert.startLoading(view: self, completion: {
@@ -71,6 +71,7 @@ extension ViewController{
         //get a reference to the label and url in the cell
         cell.titleLabel.text = articles[indexPath.row].getTitle()
         cell.url = articles[indexPath.row].getUrl()
+        cell.currentView = self
                 
         return cell
         
