@@ -13,6 +13,8 @@
 		520739C2296DA66700597C89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520739C0296DA66700597C89 /* Main.storyboard */; };
 		520739C4296DA66800597C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520739C3296DA66800597C89 /* Assets.xcassets */; };
 		520739C7296DA66800597C89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520739C5296DA66800597C89 /* LaunchScreen.storyboard */; };
+		520739D2296DA6D200597C89 /* Dao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520739D1296DA6D200597C89 /* Dao.swift */; };
+		520739D4296DA9B800597C89 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520739D3296DA9B800597C89 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		520739C3296DA66800597C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		520739C6296DA66800597C89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520739C8296DA66800597C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		520739D1296DA6D200597C89 /* Dao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dao.swift; sourceTree = "<group>"; };
+		520739D3296DA9B800597C89 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		520739B9296DA66700597C89 /* Celebrus Task */ = {
 			isa = PBXGroup;
 			children = (
-				520739BA296DA66700597C89 /* AppDelegate.swift */,
-				520739BC296DA66700597C89 /* SceneDelegate.swift */,
-				520739BE296DA66700597C89 /* ViewController.swift */,
-				520739C0296DA66700597C89 /* Main.storyboard */,
-				520739C3296DA66800597C89 /* Assets.xcassets */,
-				520739C5296DA66800597C89 /* LaunchScreen.storyboard */,
+				520739D0296DA6C200597C89 /* Controller */,
+				520739CF296DA6BC00597C89 /* View */,
+				520739CE296DA6AF00597C89 /* Model */,
 				520739C8296DA66800597C89 /* Info.plist */,
 			);
 			path = "Celebrus Task";
+			sourceTree = "<group>";
+		};
+		520739CE296DA6AF00597C89 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				520739D1296DA6D200597C89 /* Dao.swift */,
+				520739D3296DA9B800597C89 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		520739CF296DA6BC00597C89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				520739C0296DA66700597C89 /* Main.storyboard */,
+				520739C3296DA66800597C89 /* Assets.xcassets */,
+				520739C5296DA66800597C89 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		520739D0296DA6C200597C89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				520739BA296DA66700597C89 /* AppDelegate.swift */,
+				520739BC296DA66700597C89 /* SceneDelegate.swift */,
+				520739BE296DA66700597C89 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520739D2296DA6D200597C89 /* Dao.swift in Sources */,
 				520739BF296DA66700597C89 /* ViewController.swift in Sources */,
 				520739BB296DA66700597C89 /* AppDelegate.swift in Sources */,
+				520739D4296DA9B800597C89 /* News.swift in Sources */,
 				520739BD296DA66700597C89 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
